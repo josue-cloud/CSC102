@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8" >
+</head>
+
+<body>
+    <!--header element includes a library of options like search bar and clickable links-->        
+    <header>
+        <input id="search" type="text" placeholder="Search..."> 
+        
+    </header><br>
+
+    <nav>
+        <h2>Navigation</h2>
+        <a href="./index.html">Home</a><br>
+        <a href="./boards.html">Boards</a><br>
+        <a href="./game.html">Game room</a>
+    </nav><br>
+
+    <!-- JavaScript file linked here -->    
+    
+    <div id="board"></div><br>
+
+    <div id="button">
+    <button id="playButton">Play Game</button>  
+    <button id="reset">Reset Game</button>        
+    </div>
+
+    <!-- Include your JavaScript here -->
+    <script src="game.js"></script>
+
+</body>
+
+</html>
+
+<style>
+    body{
+    background-color: rgb(255, 255, 255);
+    margin-left: 25%;
+    margin-right: 25%;
+        }
+
+    #board {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+    #board div {
+        background: #eee;
+        height: 0;
+        padding-bottom: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        user-select: none;
+        
+    }
+    button {
+    margin-left: 20%;
+    margin-right: 20%;
+    }
+
+</style>
+
+
