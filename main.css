@@ -1,20 +1,105 @@
-body {
-    background-color: beige;
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 20%);
+    width: 100%;
 }
-nav {
-    height: 600px;
-    width: 200px;
+
+.navigation li {
     float: left;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: #111;
+}
+
+body{
+    background-color: rgb(248, 245, 245);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+}
+.boxTitle {
+    text-align: left;
+    border-bottom: solid;
+    margin-top: 5%;
+    border-width: 1px;
+    margin-right: 55%;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.infoTitle{
+    text-align: left;
+    border-bottom: solid;
+    border-width: 1px;
+    margin-right: 55%;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.infoBox {
+    text-align: left;
+    font-size: 20px;
+    margin-right: 60%;
+    background-color: rgb(255, 255, 246);
+    margin-bottom: 5%;
+}
+
+.footer {
+position: fixed;
+width: 100%;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+text-align: center;
+margin-top: 92%;
+}
+
+.search {
+    border: 2px solid #ffffff;
     padding: 5px;
-    line-height: center;
+    height: 15px;
+    width: 200px;
+    border-radius: 5px;
+    outline: none;
+    color: #000000;
+    float: right;
+    margin-top: 1%;
+    margin-right: 3%;
 }
-footer {
-    text-align: center;
-    margin-right: 200px;
+
+.imageBox {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
-.memes {
-    margin-right: 200px;
+.imageBox img {
+    max-width: 100%;
+    max-height: 100%;
+    animation: img 15s infinite;
+    animation-timing-function: linear;
 }
-header {
-    text-align: center;
+
+@keyframes img {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.buttons {
+    margin-top: 10px;
 }

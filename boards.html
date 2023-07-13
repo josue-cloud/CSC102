@@ -1,38 +1,37 @@
 <!--07/02/2023-->
 <!DOCTYPE html>
-
 <html lang="en">
     
     <head>
-        <title>Boards</title>
+        <title>Index</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="button.css">
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type= "text/javascript" src="button.js"></script>
+        <link rel="stylesheet" href="main.css">
     </head>
-
-<!--header element includes a library of options like search bar and clickable links-->
-<!--header element includes a library of options like search bar and clickable links-->        
-<header>
-    <input id="search" type="text" placeholder="Search..."> 
-</header><br>
-<nav>
-    <h2>Navigation</h2>
-    <a href="./index.html">Home</a><br>
-    <a href="./boards.html">Boards</a><br>
-    <a href="./game.html">Game room</a>
-</nav>
-
+    
+            <!--navigation bar-->
+            <ul class="navigation">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./boards.html">Boards</a></li>
+                <li><a href="./game.html">Game room</a></li>
+                <li><a href="strings.html">Secret Room</a></li>
+                <input class="search" type="text" placeholder="Search...">
+            </ul>
 
     <body>
-
-        <!--info div provides information about software engineering--> 
-        <div id="einfo">
-        <h1>Software Engineering</h1>
-        <h2>UAT’s Software Engineering master's degree prepares students to identify and build secure market-ready applications and
-            software solutions using leading development environments, databases, platforms and approaches. Students experience
-            evolving software, from mobile applications and cloud resources to secure coding and Agile practices. This degree requires
-            intelligence and commitment, starting with baseline knowledge and accelerating to a high level through both guided and selfdirected practice. Students with and without prior development experience will learn how to develop, test and deploy software
-            applications. The Classification of Instructional Programs (CIP) code for Software Engineering is 14.0903.
-        </h2>
-        </div><br>
+        <!--div provides information about software engineering--> 
+        <div>
+            <p class="infoTitle">Software Engineering</p>
+            <p class="infoBox">UAT’s Software Engineering master's degree prepares students to identify and build secure market-ready applications and
+                software solutions using leading development environments, databases, platforms and approaches. Students experience
+                evolving software, from mobile applications and cloud resources to secure coding and Agile practices. This degree requires
+                intelligence and commitment, starting with baseline knowledge and accelerating to a high level through both guided and selfdirected practice. Students with and without prior development experience will learn how to develop, test and deploy software
+                applications. The Classification of Instructional Programs (CIP) code for Software Engineering is 14.0903.
+            </p>
+            </div><br>
+    
 
 <!--list div provides in-depth information and pictures about software engineering--> 
         <div class="list">
@@ -57,7 +56,6 @@
             
             <p>Design, implement and possess the knowledge to publish mobile applications.</p>
                <img src="computer-and-research-scientist.jpg" class="" href=""> 
-            
         </div>   
 
         <footer>

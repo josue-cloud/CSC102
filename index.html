@@ -1,149 +1,107 @@
 <!--07/02/2023-->
 <!DOCTYPE html>
-
 <html lang="en">
     
     <head>
         <title>Index</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="button.css">
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="button.js"></script>
+        <link rel="stylesheet" href="main.css">
     </head>
+    
+            <!--navigation bar-->
+            <ul class="navigation">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./boards.html">Boards</a></li>
+                <li><a href="./game.html">Game room</a></li>
+                <li><a href="strings.html">Secret Room</a></li>
+                <input class="search" type="text" placeholder="Search...">
+            </ul>
 
     <body>
-
-<!--header element includes a library of options like search bar and clickable links-->        
-    <header>
-        <input id="search" type="text" placeholder="Search..."> 
-    </header><br>
-    <nav>
-        <h2>Navigation</h2>
-        <a href="./index.html">Home</a><br>
-        <a href="./boards.html">Boards</a><br>
-        <a href="./game.html">Game room</a>
-    </nav>
-    
-
-
-
-        <!--info div provides information about software engineering--> 
-        <div id="einfo">
-        <h1>Software Engineering</h1>
-        <h2>UAT’s Software Engineering master's degree prepares students to identify and build secure market-ready applications and
+        <!--div provides information about software engineering--> 
+        <div>
+        <p class="infoTitle">Software Engineering</p>
+        <p class="infoBox">UAT’s Software Engineering master's degree prepares students to identify and build secure market-ready applications and
             software solutions using leading development environments, databases, platforms and approaches. Students experience
             evolving software, from mobile applications and cloud resources to secure coding and Agile practices. This degree requires
             intelligence and commitment, starting with baseline knowledge and accelerating to a high level through both guided and selfdirected practice. Students with and without prior development experience will learn how to develop, test and deploy software
             applications. The Classification of Instructional Programs (CIP) code for Software Engineering is 14.0903.
-        </h2>
+        </p>
         </div><br>
 
         <!--info div provides information about software engineering--> 
-        <div>
+        <p class="boxTitle" >Software Engineering In Memes</p><br>
+        <div class="imageBox">
+            <img src="60d33beaf630caf8b8625819_ojVfiY9N9W7SNblUwsMuRdEHfZaK7gTn4I8oA596jsQz0gHhJ0msEceYVq2C5afZ4rDCvhqx1EEedzTz664Vi3aDScXL2jnzV_uuWriJbW-wldzhpJDT-TNOPvgusibLRCqaY5pJ.png">
+            <img src="60d33beaf630caf8b8625819_ojVfiY9N9W7SNblUwsMuRdEHfZaK7gTn4I8oA596jsQz0gHhJ0msEceYVq2C5afZ4rDCvhqx1EEedzTz664Vi3aDScXL2jnzV_uuWriJbW-wldzhpJDT-TNOPvgusibLRCqaY5pJ.png">
+            <img src="60d33beaf630caf8b8625819_ojVfiY9N9W7SNblUwsMuRdEHfZaK7gTn4I8oA596jsQz0gHhJ0msEceYVq2C5afZ4rDCvhqx1EEedzTz664Vi3aDScXL2jnzV_uuWriJbW-wldzhpJDT-TNOPvgusibLRCqaY5pJ.png">
+            <img src="60d33beaf630caf8b8625819_ojVfiY9N9W7SNblUwsMuRdEHfZaK7gTn4I8oA596jsQz0gHhJ0msEceYVq2C5afZ4rDCvhqx1EEedzTz664Vi3aDScXL2jnzV_uuWriJbW-wldzhpJDT-TNOPvgusibLRCqaY5pJ.png">
+        </div><br>
 
-            <h3>Software Engineering Memes</h3>
-            <p id="memes">        
-            <img src="60d33beaf630caf8b8625819_ojVfiY9N9W7SNblUwsMuRdEHfZaK7gTn4I8oA596jsQz0gHhJ0msEceYVq2C5afZ4rDCvhqx1EEedzTz664Vi3aDScXL2jnzV_uuWriJbW-wldzhpJDT-TNOPvgusibLRCqaY5pJ.png" alt="">
-            </p>  
-    
+        <div>
+            <button class="startBtn" onclick="startMoving(event)">Start</button>
+            <button class="stopBtn" onclick="stopMoving(event)">Stop</button>
+        </div>
+        
+        
+
+        <div class="footer">
+            <p>Josue Joseph
+            University of Advancing Technology
+            2625 W Baseline Rd
+            Tempe, AZ 85283</p>
         </div>
 
-
-
-        
-        <footer>
-            <P>Josue Joseph</P><br>
-            <p>University of Advancing Technology</p><br>
-            <p>2625 W Baseline Rd</p><br>
-            <p>Tempe, AZ 85283</p><br>
-        </footer> 
            
     </body><br>
-
-
-    <style>
-        body{
-            background-color: rgb(255, 255, 255);
-            margin-left: 20%;
-            margin-right: 10%;
-        }
-        .menuBar{
-            background-size: 20%;
-            margin-bottom: 1%;
-        }
-        h1{
-            text-align: left;
-            margin-bottom: 5%;
-            border-top: solid;
-            border-bottom: solid;
-            border-width: 2px;
-            margin-right: 55%;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-        }
-        h2{
-            text-align: left;
-            font-size: 15px;
-            margin-right: 60%;
-            background-color: rgb(255, 255, 246);
-            font-style: 2%;
-            margin-bottom: 5%;
-
-        }
-        p{
-            width: 60%;
-            margin-top: 5%;
-            margin-bottom: 5%;
-            font-size: 20px;
-            display: inline-block;
-            margin-right: 2%;
-
-        }
-        .list{
-            border-width: 1px;
-            margin-bottom: 5%;
-            margin-right: 10%;
-            padding: 50px;
-            margin-left: -5%;
-        }
-        img{
-            width: 300px;
-            height: 300px;
-            margin-left: 60%;
-            margin-top: -9%;
-        }
-        div h1{
-            text-align: left;
-            margin-bottom: 5%;
-            border-top: solid;
-            border-bottom: solid;
-            border-width: 2px;
-            margin-right: 55%;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        div h2{
-            text-align: left;
-            font-size: 15px;
-            margin-right: 60%;
-            background-color: rgb(255, 255, 246);
-            font-style: 2%;
-            margin-bottom: 5%;
-
-        }
-        div h3 {
-            
-        }
-        
-        div .memes {
-            width: 300px;
-            height: 200px;
-            margin-left: 60%;
-            margin-top: -9%;
-        }
-        div .meme_slide {
-            width: 300px;
-            height: 200px;
-            margin-left: 60%;
-            margin-top: -9%;
-        }
-
-
-    </style>
 </html>
+<script>
+    // Meme image element reference
+var imageBox = document.querySelector('.imageBox');
+
+// Start button element reference
+var startBtn = document.querySelector('.startBtn');
+
+// Stop button element reference
+var stopBtn = document.querySelector('.stopBtn');
+
+// Interval for moving the image
+var moveInterval;
+
+// Function to start moving the meme image
+function startMoving(event) {
+    // Prevent default button click behavior
+    event.preventDefault();
+
+    // Disable the start button and enable the stop button
+    startBtn.disabled = true;
+    stopBtn.disabled = false;
+
+    // Start moving the meme image every second
+    moveInterval = setInterval(function () {
+        // Generate random x and y translations
+        var x = Math.random() * window.innerWidth;
+        var y = Math.random() * window.innerHeight;
+
+        // Apply translations to the meme image
+        imageBox.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+    }, 1000);
+}
+
+// Function to stop moving the meme image
+function stopMoving(event) {
+    // Prevent default button click behavior
+    event.preventDefault();
+
+    // Disable the stop button and enable the start button
+    stopBtn.disabled = true;
+    startBtn.disabled = false;
+
+    // Stop moving the meme image
+    clearInterval(moveInterval);
+}
+
+</script>
