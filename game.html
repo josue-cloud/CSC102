@@ -1,36 +1,38 @@
-
+<!--07/02/2023-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Tic Tac Toe Game</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <meta charset="UTF-8" >
-</head>
+    
+    <head>
+        <title>Index</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="button.css">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type= "text/javascript" src="button.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <script type="javascript" src="y2mate.com - Minecraft.mp3"></script>
+    </head>
+    
+<!--navigation bar-->
+            <ul class="navigation">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./boards.html">Boards</a></li>
+                <li><a href="./game.html">Game room</a></li>
+                <li><a href="strings.html">Secret Room</a></li>
+                <input class="search" type="text" placeholder="Search...">
+            </ul><br>
 
 <body>
-    <!--header element includes a library of options like search bar and clickable links-->        
-    <header>
-        <input id="search" type="text" placeholder="Search..."> 
-        
-    </header><br>
+    <!--audio element playing minecraft music on loop.-->
+    <audio src="y2mate.com - Minecraft.mp3" autoplay loop></audio>
 
-    <nav>
-        <h2>Navigation</h2>
-        <a href="./index.html">Home</a><br>
-        <a href="./boards.html">Boards</a><br>
-        <a href="./game.html">Game room</a>
-    </nav><br>
-
-    <!-- JavaScript file linked here -->    
-    
+    <p>Tic Tac Toe</p>
     <div id="board"></div><br>
 
     <div id="button">
     <button id="playButton">Play Game</button>  
     <button id="reset">Reset Game</button>        
     </div>
-
-    <!-- Include your JavaScript here -->
+    
     <script src="game.js"></script>
 
 </body>
@@ -39,10 +41,14 @@
 
 <style>
     body{
-    background-color: rgb(255, 255, 255);
-    margin-left: 25%;
-    margin-right: 25%;
+    background-color: hsl(0, 0%, 20%);
+    margin-left: 20%;
+    margin-right: 20%;
         }
+    .board {
+    margin-top: 20%;
+
+    }
 
     #board {
     display: grid;
@@ -51,22 +57,32 @@
     width: 300px;
     height: 300px;
     margin: 0 auto;
+    padding: 15px;
+    text-align: center;
 }
 
     #board div {
-        background: #eee;
-        height: 0;
-        padding-bottom: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2em;
-        user-select: none;
+    text-align: center;
+    background: #eee;
+    height: 0;
+    padding-bottom: 100%;
+    display: initial;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    user-select: none;
         
     }
     button {
     margin-left: 20%;
     margin-right: 20%;
+    }
+    
+    p {
+    text-decoration: aliceblue;
+    text-align: center;
+    font-size: 35px;
+    color: #eee;
     }
 
 </style>
