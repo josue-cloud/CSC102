@@ -1,28 +1,33 @@
+<!--07/02/2023-->
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
-        <title>User Validation</title>
-        <meta charset="UTF-8">
+        <title>Index</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="button.css">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type= "text/javascript" src="button.js"></script>
+        <link rel="stylesheet" href="main.css">
     </head>
+    
+            <!--navigation bar-->
+            <ul class="navigation">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./boards.html">Boards</a></li>
+                <li><a href="./game.html">Game room</a></li>
+                <li><a href="strings.html">Secret Room</a></li>
+                <input class="search" type="text" placeholder="Search...">
+            </ul>
+
     <body>
-        <!--header element includes a library of options like search bar and clickable links-->        
-        <header>
-            <input id="search" type="text" placeholder="Search..."> 
-        </header><br>
-        <nav>
-            <h2></h2>
-            <a href="./index.html">Home</a><br>
-            <a href="./boards.html">Boards</a><br>
-            <a href="./game.html">Game room</a>
-        </nav>
-            <div class="container">
                 <!-- Creating a form for user inputs -->
-                <form onsubmit="event.preventDefault(); validateInputs();">
-                    <!-- Text input for the user's first name -->
+                <form class="formBackground" onsubmit="event.preventDefault(); validateInputs();">
+                    <!-- Text box for first name -->
                     <label for="firstName">First Name:</label><br>
                     <input type="text" id="firstName"><br>
                     
-                    <!-- Text input for the user's last name -->
+                    <!-- Text box for user's last name -->
                     <label for="lastName">Last Name:</label><br>
                     <input type="text" id="lastName"><br>
     
@@ -38,31 +43,32 @@
     
                     <!-- Button to validate the input and display the secret message -->
                     <input type="submit" value="Submit">
+                    <p id="secretMessage" style="display: none;">Welcome to the secret room!</p>
                 </form>
-    
-                <!-- Display the secret message -->
-                <p id="secretMessage" style="display: none;">You've unlocked the secret message!</p>
-            </div>
+
             </html>
         <!-- basic styles for a better user experience -->
         <style>
-            body {
-                background-color: #f2f2f2;
-                font-family: Arial, sans-serif;
-            }
-            .container {
-                width: 50%;
-                margin: auto;
-                padding: 20px;
-            }
             .warning {
-                color: red;
+            color: red;
             }
             body{
-            background-color: rgb(255, 255, 255);
+            background-color: hsl(0, 0%, 20%);
             margin-left: 20%;
-            margin-right: 10%;
+            margin-right: 20%;
             }
+            .formBackground {
+            margin-top: 10%;
+            box-sizing: border-box;
+            padding: 2rem;
+            border-radius: 1rem;
+            background-color: hsl(0, 0%, 100%);
+            border: 4px solid hsl(0, 0%, 90%);
+            display: block;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            }
+
         </style>
 
 <!-- JavaScript code to validate the inputs -->
