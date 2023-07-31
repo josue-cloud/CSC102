@@ -10,7 +10,8 @@
         <script type= "text/javascript" src="button.js"></script>
         <link rel="stylesheet" href="main.css">
         <script rel="stylesheet" href="loop.js"></script>
-        <script src="palindrome.js"></script>
+        <script type="text/javascript" src="palindrome.js"></script>
+        <script type= "text/javascript" src="validation.js"></script>
     </head>
     
             <!--navigation bar-->
@@ -23,8 +24,19 @@
             </ul>
 
     <body>
-                <!-- Form for user inputs -->
-                <form class="formBackground" onsubmit="event.preventDefault(); validateInputs();">
+
+
+        <!--This div will display an error message if needed.-->
+        <div id="errorMessage"></div>
+
+                    
+        <!-- Form for user inputs -->
+                <form name="theForm" id="theForm" class="formBackground" onsubmit="event.preventDefault(); validateInputs();">
+
+                     <!--this is our page greeting-->
+                    <h1 class="text">Please enter your first and last names and your zip code in order to continue.</h1>
+   
+
                     <!-- Text box for first name -->
                     <label for="firstName">First Name:</label><br>
                     <input type="text" id="firstName"><br>
@@ -51,14 +63,17 @@
             </html>
         <!-- basic styles for a better user experience -->
         <style>
+
             .warning {
             color: red;
             }
+
             body{
             background-color: hsl(0, 0%, 20%);
             margin-left: 20%;
             margin-right: 20%;
             }
+
             .formBackground {
             margin-top: 10%;
             box-sizing: border-box;
@@ -71,6 +86,10 @@
             gap: 2rem;
             }
 
+            .text {
+                color: rgb(0, 0, 0);
+                font-size: 32px;
+            }
         </style>
 
 <!-- JavaScript code to validate the inputs -->
