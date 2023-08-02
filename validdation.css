@@ -1,22 +1,35 @@
-
+/*allows us to style our warning message*/
 .warning {
+    /*sets our warning text color to red*/
     color: red;
     }
-
+    /*allows us to style the webpage body*/
     body{
+    /*sets the background to a medium grey color*/
     background-color: hsl(0, 0%, 20%);
+    /*sets our body margin left 20%*/
     margin-left: 20%;
+    /*sets our body margin 20% to the right*/
     margin-right: 20%;
     }
-
+    /*allows us to style our form background*/
     .formBackground {
+    /*sets our form margin 10% at the top*/
     margin-top: 10%;
+    /*creates a border box around our form background element*/
     box-sizing: border-box;
+    /*sets our padding at 2rem for our webpage background*/
     padding: 2rem;
+    /*sets the border radius to 1rem*/
     border-radius: 1rem;
+    /*sets our background color to white*/
     background-color: hsl(0, 0%, 100%);
+    /*sets our border size at 4px, solifd border and white color*/
     border: 4px solid hsl(0, 0%, 90%);
+    /*displays our form in a block type*/
     display: block;
+    /*creates a grid template*/
     grid-template-columns: 1fr 1fr;
+    /*sets a gap distance with a value of 2rem*/
     gap: 2rem;
     }
