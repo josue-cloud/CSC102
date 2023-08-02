@@ -1,9 +1,10 @@
 
-// Function to run when the playButton is clicked
+// creates a function to run when the playButton is clicked
 function playButton() {
+    //creates allert message to be displayed on the screen for when the fuction is called
     alert('Let the games begin!');
 
-    // Initialization 
+    // Initializes and resets the game
 
     resetGame();
 }
@@ -36,12 +37,19 @@ function handleTurn(event) {
     if (board[id] === null) {
         board[id] = currentTurn;
         event.target.textContent = currentTurn;
+        //creates a function to be called when a player wins
         if (checkWin()) {
+            //displays the current turn and announces the winner
             alert(currentTurn + ' wins!');
+            //resets game after there is a winner
             resetGame();
+            //if there is no winner, create alert message
         } else if (board.every(cell => cell !== null)) {
+            //create alert message when there is a tie
             alert('Tie!');
+            //resets game after there is a tie
             resetGame();
+            //if the game is still being played, go to next turn whether it is X or O
         } else {
             currentTurn = currentTurn === 'X' ? 'O' : 'X';
         }
@@ -57,7 +65,7 @@ function checkWin() {
         [1, 4, 7],
         [2, 5, 8],
         [0, 4, 8],
-        [2, 4, 6]
+        [2, 4, 6],
     ];
     return lines.some(line => line.every(i => board[i] === currentTurn));
 }
