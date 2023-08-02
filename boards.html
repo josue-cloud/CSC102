@@ -1,22 +1,32 @@
 <!--07/02/2023-->
+
+<!--creates a html file document-->
 <!DOCTYPE html>
+<!--Writes the html page in english-->
 <html lang="en">
-    
+
+    <!--the head element contains information like keywords and descriptions that you want to include in your webpage but not display for the users to see-->
     <head>
+        <!--title element displays the webpage name-->
         <title>Index</title>
+        <!--link elements connects the main.css page to style our index page-->
         <link rel="stylesheet" href="main.css">
+         <!--the button.css file is used to style the buttons that move the image around the screen-->
         <link rel="stylesheet" href="button.css">
+         <!--meta element contains the UTF-8 charset which uses a vast majority of characters from most written languages-->
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--script element links our external code.js to our index.html page-->
         <script type= "text/javascript" src="button.js"></script>
-        <link rel="stylesheet" href="main.css">
     </head>
     
             <!--navigation bar-->
             <ul class="navigation">
+                 <!--li elements contains our navigation links connecting our external webpages to our main homepage-->
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./boards.html">Boards</a></li>
                 <li><a href="./game.html">Game room</a></li>
                 <li><a href="strings.html">Secret Room</a></li>
+                <!--the input element creates a search bar with a "search..." placeholder being displayed-->
                 <input class="search" type="text" placeholder="Search...">
             </ul>
 
@@ -24,6 +34,9 @@
         <!--div provides information about software engineering--> 
         <div>
             <p class="infoTitle">Software Engineering</p>
+            
+            <!--p element provides information about software engineering--> 
+
             <p class="infoBox">UAT’s Software Engineering master's degree prepares students to identify and build secure market-ready applications and
                 software solutions using leading development environments, databases, platforms and approaches. Students experience
                 evolving software, from mobile applications and cloud resources to secure coding and Agile practices. This degree requires
@@ -34,31 +47,41 @@
     
 
 <!--list div provides in-depth information and pictures about software engineering--> 
+<!--each p element provides pictures and information about the program and explains the work of a software engineer-->
         <div class="list">
+            <!--each p element provides pictures and information about the program and explains the work of a software engineer-->
+
             <p>Develop and test algorithms, strategies and methodologies to design, develop and test software systems.</p>
             <img src="two computer science professionals using equipment.jpg" class="" href=""> 
 
+            <!--each p element provides pictures and information about the program and explains the work of a software engineer-->
             <p>Leverage the strengths of multiple programming languages and database integration in software development.</p>
                 <img src="Computer_Research_Scientist.jpg" class="" href="">
             
-            
+            <!--each p element provides pictures and information about the program and explains the work of a software engineer-->
+
             <p>Apply advanced development tools and methods to create software solutions for multiple platforms.</p>
                 <img src="computer-science-860-x-480.jpg" class="" href="">
             
-            
+            <!--each p element provides pictures and information about the program and explains the work of a software engineer-->
+
             <p>Analyze, select and implement appropriate professional software development paradigms such as Agile and unit testing for software projects.</p>
                <img src="ranking-1-1014x600.png" class="" href=""> 
             
-            
+            <!--each p element provides pictures and information about the program and explains the work of a software engineer-->
+
             <p>Utilize professional software development tools and libraries for application and app development.</p>
                <img src="How_to_Become_a_Computer_Scientist.avif" class="" href=""> 
             
-            
+            <!--each p element provides pictures and information about the program and explains the work of a software engineer-->
+
             <p>Design, implement and possess the knowledge to publish mobile applications.</p>
                <img src="computer-and-research-scientist.jpg" class="" href=""> 
         </div>   
 
+         <!--the footer element contains information about the school, myself and the school's address where the program is bring taught-->
         <footer>
+            <!--within the P element all of the information is displayed on the screen-->
             <P>Josue Joseph</P><br>
             <p>University of Advancing Technology</p><br>
             <p>2625 W Baseline Rd</p><br>
@@ -66,56 +89,96 @@
         </footer> 
 
     </body><br>
-
+<!--the style element allows us to customize parts of our code-->
     <style>
+        /*allows us to customize our webpages body*/
         body{
+            /*the background color allows us to set the background color to white*/
             background-color: rgb(255, 255, 255);
+            /*allows us to set the margin limit of our webpage 20% from the left*/
             margin-left: 20%;
+             /*allows us to set the margin limit of our webpage 10% from the right*/
             margin-right: 10%;
         }
+         /*allows us to customize our webpages menu and navigation bar*/
         .menuBar{
+             /*sets background size to 20%*/
             background-size: 20%;
+            /*sets menu margin 1% from the bottom of our webpage*/
             margin-bottom: 1%;
         }
+        /*allows us to style our h1 element*/
         h1{
+            /*sits our h1 element and text to the left side of our webpage*/
             text-align: left;
+            /*sets our h1 element margin to 5%*/
             margin-bottom: 5%;
+            /*creates a solid border about to text inside our h1 element*/
             border-top: solid;
+            /*creates a solid bottom border for the text inside our h1 elemennt*/
             border-bottom: solid;
+            /*sets out border size to 2 pixels*/
             border-width: 2px;
+            /*sets our h1 element at 55% to the right*/
             margin-right: 55%;
+            /*choosing our font for the text within the h1 element*/
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
         }
+        /*allows us to style our h2 elements*/
         h2{
+            /*alligns our text elemts to the left of our webpage*/
             text-align: left;
+            /*sets our font size to 15%*/
             font-size: 15px;
+            /*sets our margin 60% right of our screen*/
             margin-right: 60%;
+            /*sets our web pages background color to white*/
             background-color: rgb(255, 255, 246);
+            /*styles our fonts up to 2%*/
             font-style: 2%;
+            /*keeps our h2 margin 5% from the bottom*/
             margin-bottom: 5%;
 
         }
+        /*allows us to style our p elements*/
         p{
+            /*sets the width of our p element to 60%*/
             width: 60%;
+            /*sets our element margin at 5% at the top of our webpage*/
             margin-top: 5%;
+            /*sets our element margin 5% from the bottom*/
             margin-bottom: 5%;
+            /*sets our font size to 20 pixels on our webpage*/
             font-size: 20px;
+            /*displays our p element as an inline-block*/
             display: inline-block;
+            /*sets our p element 2% from the right side of our webpage*/
             margin-right: 2%;
 
         }
+        /*allows us to style our list element*/
         .list{
+            /*sets our border width to 1px*/
             border-width: 1px;
+            /*sets our margin list to 5%*/
             margin-bottom: 5%;
+            /*sets our list margin 10% to the right*/
             margin-right: 10%;
+            /*sets our list padding 1 to 50px*/
             padding: 50px;
+            /*sets our list margin at -5%*/
             margin-left: -5%;
         }
+        /*allows us to customize our img element*/
         img{
+            /*sets our image width to 300px*/
             width: 300px;
+            /*sets our image height at 200px*/
             height: 200px;
+            /*sets our img element margin left 60%*/
             margin-left: 60%;
+            /*sets our img element to -9%*/
             margin-top: -9%;
         }
 
