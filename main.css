@@ -1,3 +1,4 @@
+/*style for the navigation bar in our webpage*/
 .navigation {
     list-style-type: none;
     margin: 0;
@@ -7,10 +8,12 @@
     width: 100%;
 }
 
+/*style for the navigation list in our webpage*/
 .navigation li {
     float: left;
 }
 
+/*style for the navigation links in our webpage*/
 .navigation li a {
     display: block;
     color: white;
@@ -19,16 +22,20 @@
     text-decoration: none;
 }
 
+/*style for the navigation links in our webpage*/
 .navigation li a:hover {
     background-color: #111;
 }
 
+/*style for the navigation links in our webpage*/
 body{
     background-color: rgb(248, 245, 245);
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 2%;
 }
+
+/*style for the navigation links in our webpage*/
 .boxTitle {
     text-align: left;
     border-bottom: solid;
@@ -38,6 +45,8 @@ body{
     padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/*style for the navigation links in our webpage*/
 .infoTitle{
     text-align: left;
     border-bottom: solid;
@@ -47,6 +56,7 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*style for the info box in our webpage*/
 .infoBox {
     text-align: left;
     font-size: 20px;
@@ -55,12 +65,13 @@ body{
     margin-bottom: 5%;
 }
 
+/*style for the footer section in our webpage*/
 .footer {
 text-align: center;
 margin-right: 200px;
-
 }
 
+/*style for the search bar in our webpage*/
 .search {
     border: 2px solid #ffffff;
     padding: 5px;
@@ -74,29 +85,65 @@ margin-right: 200px;
     margin-right: 3%;
 }
 
-.memeImage {
-    width: 100%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-.memeImage img {
-    max-width: 100%;
-    max-height: 100%;
-    animation: img 15s infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes img {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-.buttons {
+/*style for the buttons in our webpage*/
+.btn {
     margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 5px 5px 5px 5px;
+}
+
+/*style for the memeImage in our webpage*/
+#memeImage {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 200px;
+    margin: 600px;
+}
+
+/*style for the table in our webpage*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/*style for the table rows and columns in our webpage*/
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+/*style for the table head in our webpage*/
+th {
+    background-color: #f2f2f2;
+}
+
+/*style for the memeTitle section in our webpage*/
+.memeTitle {
+    text-align: left;
+    border-bottom: solid;
+    margin-top: 5%;
+    border-width: 1px;
+    margin-right: 55%;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*style for the contact section of our webpage*/
+.contact {
+    margin-top: 2%;
+    text-align: left;
+    margin-right: 55%;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*style for the table section of our webpage*/
+table {
+    margin-top: 2%;
 }
